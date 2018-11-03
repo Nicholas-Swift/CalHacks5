@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		65327B14218AA82E00AC446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B13218AA82E00AC446B /* AppDelegate.swift */; };
-		65327B16218AA82E00AC446B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B15218AA82E00AC446B /* ViewController.swift */; };
-		65327B19218AA82E00AC446B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65327B17218AA82E00AC446B /* Main.storyboard */; };
 		65327B1B218AA82F00AC446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65327B1A218AA82F00AC446B /* Assets.xcassets */; };
 		65327B1E218AA82F00AC446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65327B1C218AA82F00AC446B /* LaunchScreen.storyboard */; };
+		65327B26218AA89300AC446B /* SpringBoardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B25218AA89300AC446B /* SpringBoardCollectionViewController.swift */; };
+		65327B28218AA9BD00AC446B /* SpringBoardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B27218AA9BD00AC446B /* SpringBoardPageViewController.swift */; };
+		65327B2A218AAF5900AC446B /* AppIconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B29218AAF5900AC446B /* AppIconCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65327B10218AA82E00AC446B /* FacebookAppHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookAppHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65327B13218AA82E00AC446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65327B15218AA82E00AC446B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65327B18218AA82E00AC446B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65327B1A218AA82F00AC446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65327B1D218AA82F00AC446B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65327B1F218AA82F00AC446B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65327B25218AA89300AC446B /* SpringBoardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringBoardCollectionViewController.swift; sourceTree = "<group>"; };
+		65327B27218AA9BD00AC446B /* SpringBoardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringBoardPageViewController.swift; sourceTree = "<group>"; };
+		65327B29218AAF5900AC446B /* AppIconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				65327B13218AA82E00AC446B /* AppDelegate.swift */,
-				65327B15218AA82E00AC446B /* ViewController.swift */,
-				65327B17218AA82E00AC446B /* Main.storyboard */,
+				65327B29218AAF5900AC446B /* AppIconCollectionViewCell.swift */,
+				65327B25218AA89300AC446B /* SpringBoardCollectionViewController.swift */,
+				65327B27218AA9BD00AC446B /* SpringBoardPageViewController.swift */,
 				65327B1A218AA82F00AC446B /* Assets.xcassets */,
 				65327B1C218AA82F00AC446B /* LaunchScreen.storyboard */,
 				65327B1F218AA82F00AC446B /* Info.plist */,
@@ -124,7 +127,6 @@
 			files = (
 				65327B1E218AA82F00AC446B /* LaunchScreen.storyboard in Resources */,
 				65327B1B218AA82F00AC446B /* Assets.xcassets in Resources */,
-				65327B19218AA82E00AC446B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +137,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65327B16218AA82E00AC446B /* ViewController.swift in Sources */,
+				65327B28218AA9BD00AC446B /* SpringBoardPageViewController.swift in Sources */,
 				65327B14218AA82E00AC446B /* AppDelegate.swift in Sources */,
+				65327B2A218AAF5900AC446B /* AppIconCollectionViewCell.swift in Sources */,
+				65327B26218AA89300AC446B /* SpringBoardCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65327B17218AA82E00AC446B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65327B18218AA82E00AC446B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65327B1C218AA82F00AC446B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
