@@ -25,8 +25,8 @@ class AppIconCollectionViewCell: UICollectionViewCell {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    self.layer.borderColor = UIColor.lightGray.cgColor
-    self.layer.borderWidth = 0.5
+//    self.layer.borderColor = UIColor.lightGray.cgColor
+//    self.layer.borderWidth = 0.5
     
     setupAppTitleLabel()
     setupAppLogoImageView()
@@ -51,23 +51,29 @@ extension AppIconCollectionViewCell {
   func setupAppTitleLabel() {
     appTitleLabel = UILabel(frame: .zero)
     appTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+    appTitleLabel.textAlignment = .center
+    appTitleLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+    appTitleLabel.textColor = .darkGray
     self.addSubview(appTitleLabel)
     NSLayoutConstraint.activate(
       [appTitleLabel.leftAnchor.constraint(equalTo: self.leftAnchor),
        appTitleLabel.rightAnchor.constraint(equalTo: self.rightAnchor),
-       // appTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 2),
-        appTitleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor)])
+       appTitleLabel.heightAnchor.constraint(equalToConstant: 12),
+       appTitleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor)])
   }
   
   func setupAppLogoImageView() {
     appLogoImageView = UIImageView(frame: .zero)
     appLogoImageView.translatesAutoresizingMaskIntoConstraints = false
+    appLogoImageView.backgroundColor = .blue
+    appLogoImageView.layer.cornerRadius = 18
+    appLogoImageView.layer.masksToBounds = true
     self.addSubview(appLogoImageView)
     NSLayoutConstraint.activate(
-      [appLogoImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 2),
-       appLogoImageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -2),
-       appLogoImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 2),
-       appLogoImageView.bottomAnchor.constraint(equalTo: appTitleLabel.topAnchor, constant: -2)])
+      [appLogoImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 6),
+       appLogoImageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -6),
+       appLogoImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 6),
+       appLogoImageView.bottomAnchor.constraint(equalTo: appTitleLabel.topAnchor, constant: -6)])
   }
   
   func setupBadgeNumberLabel() {
