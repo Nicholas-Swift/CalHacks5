@@ -37,6 +37,11 @@ class SpringBoardCollectionViewController: UIViewController {
 // MARK: - UICollectionViewDelegate
 extension SpringBoardCollectionViewController: UICollectionViewDelegate {
 
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let viewController = AppViewController()
+    self.present(viewController, animated: true, completion: nil)
+  }
+  
 }
 
 // MARK: - UICollectionViewDataSource

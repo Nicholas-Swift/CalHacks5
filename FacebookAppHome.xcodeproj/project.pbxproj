@@ -13,6 +13,7 @@
 		65327B26218AA89300AC446B /* SpringBoardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B25218AA89300AC446B /* SpringBoardCollectionViewController.swift */; };
 		65327B28218AA9BD00AC446B /* SpringBoardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B27218AA9BD00AC446B /* SpringBoardPageViewController.swift */; };
 		65327B2A218AAF5900AC446B /* AppIconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65327B29218AAF5900AC446B /* AppIconCollectionViewCell.swift */; };
+		654B309E218D9B0C009A3E7E /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B309D218D9B0C009A3E7E /* AppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		65327B25218AA89300AC446B /* SpringBoardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringBoardCollectionViewController.swift; sourceTree = "<group>"; };
 		65327B27218AA9BD00AC446B /* SpringBoardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringBoardPageViewController.swift; sourceTree = "<group>"; };
 		65327B29218AAF5900AC446B /* AppIconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconCollectionViewCell.swift; sourceTree = "<group>"; };
+		654B309D218D9B0C009A3E7E /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				65327B13218AA82E00AC446B /* AppDelegate.swift */,
+				654B309D218D9B0C009A3E7E /* AppViewController.swift */,
 				65327B29218AAF5900AC446B /* AppIconCollectionViewCell.swift */,
 				65327B25218AA89300AC446B /* SpringBoardCollectionViewController.swift */,
 				65327B27218AA9BD00AC446B /* SpringBoardPageViewController.swift */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654B309E218D9B0C009A3E7E /* AppViewController.swift in Sources */,
 				65327B28218AA9BD00AC446B /* SpringBoardPageViewController.swift in Sources */,
 				65327B14218AA82E00AC446B /* AppDelegate.swift in Sources */,
 				65327B2A218AAF5900AC446B /* AppIconCollectionViewCell.swift in Sources */,
